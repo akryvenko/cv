@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class LengthScannerRunner {
     public static void main(String args[]) throws Exception {
 
-        LengthScanner calc = new LengthScanner();
+        ParenthesesScanner calc = new ParenthesesScanner();
 
         Scanner sc = new Scanner(System.in);
 

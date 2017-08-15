@@ -2,12 +2,18 @@ package com.cv.scanner;
 
 import java.util.*;
 
-public class LengthScanner {
+public class ParenthesesScanner {
 
     private Queue<Integer> data = new LinkedList<Integer>();
 
     public void add(Integer item) {
         this.data.add(item);
+    }
+
+    public void setData(Integer[] data) {
+        for (Integer el: data) {
+            this.add(el);
+        }
     }
 
     public int getCount() {
@@ -21,6 +27,7 @@ public class LengthScanner {
     }
 
     private int getBalancedBranchLengthForPart() {
+        boolean isBalanced = true;
         int result = 0;
         Stack<Integer> queue = new Stack<Integer>();
         while (!data.isEmpty()) {
@@ -38,7 +45,8 @@ public class LengthScanner {
             }
 
             if (item < 0 && queue.peek() != -item) {
-                return 0;
+                isBalanced = false;
+                continue;
             }
 
             if (item < 0 && queue.peek() == -item) {
@@ -47,7 +55,7 @@ public class LengthScanner {
             }
         }
 
-        if (queue.isEmpty())
+        if (isBalanced && queue.isEmpty())
             return result;
         else
             return 0;

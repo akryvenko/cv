@@ -18,6 +18,12 @@ public class DocumentService {
             doc.closeNode(item);
     }
 
+    public void setData(Integer[] data) {
+        for (Integer el: data) {
+            this.add(el);
+        }
+    }
+
     public int getCount() {
         int result = 0;
 
@@ -33,5 +39,4 @@ public class DocumentService {
     public List<Node> getNodes() {
         return doc.getNodes();
     }
-
 }
