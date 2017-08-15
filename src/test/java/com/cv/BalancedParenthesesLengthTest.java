@@ -7,13 +7,10 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-/**
- * Created by alexander.kryvenko on 15.08.2017.
- */
 public class BalancedParenthesesLengthTest {
 
     private DocumentService documentService;
-    private ParenthesesScanner parenthesesScanner;BalancedParenthesesLengthTest
+    private ParenthesesScanner parenthesesScanner;
 
     @BeforeMethod
     public void setUp() throws Exception {
