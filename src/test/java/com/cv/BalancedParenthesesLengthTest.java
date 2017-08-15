@@ -116,7 +116,7 @@ public class BalancedParenthesesLengthTest {
     }
 
     @Test
-    public void testBalancedParenthesisWithSameName() throws Exception {
+    public void testBalancedParenthesesWithSameName() throws Exception {
 
         Integer[] data = {1, 1, 1, 1, -1, -1, -1, -1};
         documentService.setData(data);
@@ -130,7 +130,7 @@ public class BalancedParenthesesLengthTest {
     }
 
     @Test
-    public void testBalancedParenthesisMultiLevelStructure() throws Exception {
+    public void testBalancedParenthesesMultiLevelStructure() throws Exception {
 
         Integer[] data = {1, -1, 2, 3, 4, -4, 5, 6, 7, -7, -6, -5, -3, -2, -1};
 
