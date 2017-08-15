@@ -19,7 +19,7 @@ public class BalancedParenthesesLengthTest {
     }
 
     @Test
-    public void test_1() throws Exception {
+    public void testForNonBalancedParenthesesInSecondSubArray() throws Exception {
         Integer[] data = {1, -1, 2, -3, -2};
 
         documentService.setData(data);
